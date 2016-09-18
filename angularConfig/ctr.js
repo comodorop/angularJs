@@ -1,6 +1,10 @@
-app.controller("ctr", function ($scope) {
+app.controller("ctr", function ($scope, $http) {
 
-
+    $("#myModal").modal({
+        show: true,
+        keyboard: false,
+        backdrop: false
+    });
 
     $scope.datosPersonales = {};
 
@@ -13,10 +17,17 @@ app.controller("ctr", function ($scope) {
 
     };
 
-    $scope.saluda = function () {
-        alert("Hola mundo");
+    $scope.ocultarModal = function () {
+        $("#myModal").modal("hide");
     };
-    
-//    $scope.saluda();
+
+    $scope.obtenerUsuarios = function () {
+        console.log("va a entrar");
+        $http.get("https://jsonplaceholder.typicode.com/users").then(function (respuesta) {
+            console.log(respuesta);
+            $scope.listaUsuarios = respuesta.data;
+        });
+    };
+    $scope.obtenerUsuarios();
 
 });
