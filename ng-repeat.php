@@ -19,7 +19,6 @@
                 <th>Correo</th>
                 <th>Acciones</th>
                 </thead>
-
                 <tr ng-class="{
                                     'success':usuarios.username == 'Samantha'}"  ng-repeat="usuarios in listaUsuarios| filter: busqueda ">
                     <td>{{usuarios.name}}</td>
