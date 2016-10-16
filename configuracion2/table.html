@@ -26,7 +26,8 @@ and open the template in the editor.
                             <th>Email</th>
                             <th>Telefono</th>
                             </thead>
-                            <tr ng-class="{'success': datoPersonal.name == 'Chelsey Dietrich'}"  ng-repeat="datoPersonal in listaUsuarios| filter: filtro ">
+                            <tr ng-class="{'success': datoPersonal.name == 'Chelsey Dietrich'}"  
+                                ng-repeat="datoPersonal in listaUsuarios| filter: filtro ">
                                 <td>{{datoPersonal.id}}</td>
                                 <td>{{datoPersonal.name}}</td>
                                 <td>{{datoPersonal.email}}</td>

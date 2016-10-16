@@ -5,8 +5,6 @@
         <link rel="stylesheet" href="css/bootstrap-theme.css"/>
     </head>
     <body ng-controller="ctr">
-
-
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
