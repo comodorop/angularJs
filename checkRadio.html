@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+    <!--indicamos al documento html que vamos a iniciar angular js--> 
+    <body ng-app="appCheck">
+        <div ng-controller="ctrCheck" class="container">
+            <div class="col-lg-5 col-lg-offset-1">
+                <div ng-repeat="opciones in listaCheck" class="checkbox">
+                    <label>
+                        <input ng-change="opcionesSeleccionas(opciones.id)" 
+                               ng-model="opcion"
+                               type="checkbox"> {{opciones.username}}
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-1">
+                <div ng-repeat="opciones in listaCheck" class="checkbox">
+                    <label>
+                        <input ng-value="opciones.id" type="radio"> {{opciones.username}}
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="angularJs/angular.min.js"></script>
+        <script src="angularConfig/appCheck.js"></script>
+    </body>
+</html>

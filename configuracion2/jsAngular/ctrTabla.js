@@ -14,7 +14,6 @@ app.controller('ctrDatos', function ($scope, $http) {
     $scope.guardarProducto = function () {
         if ($scope.productos.idProducto == 0) {
             $http.post("./Controller/guardarProducto.php", {valor: $scope.productos}).success(function (respuesta) {
-                alert(respuesta);
                 $scope.dameInformacion();
 //            LIMPIAMOS CAMPOS
                 $scope.productos = {};

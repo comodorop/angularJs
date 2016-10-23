@@ -1,8 +1,4 @@
 app.controller('ctrDatosPersonales', function ($scope, $http) {
-//    alert("hola mundo");
-
-//    $scope.nombre = "";
-//    $scope.apellido = "";
     $scope.datosPersonales = {};
 //CRECION DE UN METODO EN ANGULAR JS    
     $scope.obtenerInformacion = function () {

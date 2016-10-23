@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="css/bootstrap.min.css"></script>
+    </head>
+    <body ng-app="appCmb">
+        <div class="container" ng-controller="ctrCombo">
+            <h1>Forma correcta</h1>
+            <select  ng-model="valorCmb" 
+                     ng-options="valores.id as valores.username for valores in listaCmb" >
+                <option value="">Seleccione una opcion</option>
+            </select>
+            <br>
+            <h1 class="page-header">Forma incorrecta</h1>
+            <select  ng-model="valorCmb">
+                <option value="">Seleccione una opcion</option>
+                <option value="{{valores.id}}" ng-repeat="valores in listaCmb">
+                    {{valores.username}}
+                </option>
+            </select>
+        </div>
+        <script src="angularJs/angular.min.js"></script>
+        <script src="angularConfig/appCmb.js"></script>
+    </body>
+</html>
