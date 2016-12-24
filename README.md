@@ -12,3 +12,4 @@ Creacion de un combo box correspondientemente.
                     ng-options="valores.id as valores.username for valores in listaCmb" >
                 <option value="">Seleccione una opcion</option>
            </select>
+'''
