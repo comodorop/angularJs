@@ -13,3 +13,9 @@ Creacion de un combo box correspondientemente.
                 <option value="">Seleccione una opcion</option>
            </select>
 '''
+
+```sh
+$ npm install --production
+$ npm run predeploy
+$ NODE_ENV=production node app
+```
