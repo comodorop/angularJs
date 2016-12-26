@@ -39,7 +39,7 @@ https://jsonplaceholder.typicode.com/
 *Procedemos a agregar la configuracion en javaScript.
 <br>
 ```
-angular.module('app', ['']);
+var app = angular.module('app', ['']);
 ```
 <h2>Controlador</h2>
 <p>
