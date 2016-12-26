@@ -8,6 +8,7 @@ https://jsonplaceholder.typicode.com/
 #Configuracion inicial de angular js
 
 *Configurando angular js.
+<br>
 ```
 <!DOCTYPE html>
 <html>
