@@ -57,7 +57,11 @@ Definiendo un controlador.
         <div ng-controller="ctr"></div>
     </body>
 ```
-
+<p>Despues procedemos a configurar ese controler en nuestro archivo de javaScript AngularController/ctr.js</p>
+```
+    app.controller('ctr', function ($scope){ 
+    });
+```
 
 
 
