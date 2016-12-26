@@ -7,6 +7,7 @@ https://jsonplaceholder.typicode.com/
 
 
 #Configuracion de nuestro proyecto
+<br>
 <p>
     Una vez que hemos inicializado nuestro proyecto, vamos a tener esta estructura 
     basica de carpetas para tener un mejor orden.
@@ -17,7 +18,7 @@ https://jsonplaceholder.typicode.com/
 
 #Configuracion inicial de angular js
 
-*Configurando angular js.
+<h2>Configurando angular js.</h2>
 <br>
 ```
 <!DOCTYPE html>
@@ -34,14 +35,28 @@ https://jsonplaceholder.typicode.com/
     </body>
 </html>
 ```
+<br>
 *Procedemos a agregar la configuracion en javaScript.
+<br>
 ```
 angular.module('app', ['']);
 ```
+<h2>Controlador</h2>
 <p>
-
-
+Un controlador, es la capa de nuestro sistema que nos va a permitir validar, obtener o enviar
+información a la bd o simplemente aplicar una logia de negocios particular.
+(No se recomienda usar javaScript para hacer operaciones aritmeticas, ya que es muy lento. Hacerlo en el 
+lado del servidor).
 </p>
+<h3>
+Definiendo un controlador.
+</h3>
+<p> Para empezar a utilizar controladores es algo muy sencillo, que simplemente basta con poner una directiva "ng-controller"</p>
+```
+    <body ng-app="app">
+        <div ng-controller="ctr"></div>
+    </body>
+```
 
 
 
