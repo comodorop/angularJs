@@ -1,20 +1,12 @@
 app.controller("ctr", function ($scope, $http) {
-
     $("#myModal").modal({
         show: true,
         keyboard: false,
         backdrop: false
     });
-
     $scope.datosPersonales = {};
-
-
-
     $scope.obtenerInformacion = function () {
-//        console.log(datosPeronales);
         $scope.datosPersonales.extencion = "230";
-        console.log($scope.datosPersonales);
-
     };
 
     $scope.ocultarModal = function () {

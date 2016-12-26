@@ -5,6 +5,16 @@ Aprenderemos a visualizar ejemplo de angular js.
 #Herramienta implementada para el consumo de informacion.
 https://jsonplaceholder.typicode.com/
 
+
+#Configuracion de nuestro proyecto
+<p>
+    Una vez que hemos inicializado nuestro proyecto, vamos a tener esta estructura 
+    basica de carpetas para tener un mejor orden.
+</p>
+<img src="http://www.ascodecodigo.com/img/treeProject.png"/>
+
+
+
 #Configuracion inicial de angular js
 
 *Configurando angular js.
@@ -28,7 +38,10 @@ https://jsonplaceholder.typicode.com/
 ```
 angular.module('app', ['']);
 ```
+<p>
 
+
+</p>
 
 
 
